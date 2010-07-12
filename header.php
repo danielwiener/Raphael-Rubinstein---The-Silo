@@ -32,11 +32,20 @@
 jQuery.noConflict();
 jQuery(document).ready(function($)  {
     $(".tab").click(function(){
-	  $("#panel").slideToggle("slow");
-	  $(this).toggleClass("toggle");
-	});
+		$("#panel").slideToggle("slow");
+	  
+			if(  $('#open').is(":visible") ){
+				$('#open').hide();
+				$('#close').show();
+				} 
+	  
+			else if(  $('#close').is(":visible") ){
+				$('#close').hide();
+				$('#open').show();
+				}
+		} );
 
-            } );
+	} );
           
 </script> 
 
@@ -59,7 +68,7 @@ jQuery(document).ready(function($)  {
 <?php endif; ?>
 			</div>
 
-			<div class="column column-2 column-log-in">
+			<div class="column column-2">
 				<?php if ( is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
 				
 					<ul class="xoxo">
@@ -70,7 +79,7 @@ jQuery(document).ready(function($)  {
 
 			</div>
 			<div class="column column-3">
-				<p><strong>More Info</strong></p>
+				<h3  class="widget-title">More Info</h3>
 				<?php wp_nav_menu(array('menu' => 'Info')); ?>
 			</div>
 
@@ -84,16 +93,18 @@ jQuery(document).ready(function($)  {
 			</div>
 		</div>
 	</div>
-
+<div id="outer_wrapper">
 <div id="wrapper" class="hfeed">
 	<div id="header">
 		<div id="masthead">
 			<div id="branding" role="banner">
 				<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 				<<?php echo $heading_tag; ?> id="site-title">
-					<span>
+					<!--
+<span>
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</span>
+-->
 				</<?php echo $heading_tag; ?>>
 				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 			</div><!-- #branding -->
