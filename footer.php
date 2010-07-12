@@ -44,6 +44,7 @@
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->
+</div><!-- #outer_wrapper -->
 
 <?php
 	/* Always have wp_footer() just before the closing </body>
