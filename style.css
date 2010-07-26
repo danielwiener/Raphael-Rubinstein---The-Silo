@@ -87,7 +87,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #secondary {
 	float: right;
 	overflow: hidden;
-	width: 220px;
+	width: 140px;
 }
 #secondary {
 	clear: right;
@@ -175,8 +175,8 @@ code {
 #wrapper {
 	background: #fff url(images/silo_small.jpg) no-repeat right 40px;
 	margin-top: 0px;
-	padding: 0 20px;
-	/* border: 1px solid red; */
+	padding: 0 0 0 20px;
+/* 	border: 1px solid red; */
 }
 
 
@@ -1054,7 +1054,7 @@ h3#reply-title {
 /* Main sidebars */
 #main .widget-area ul {
 	margin-left: 0;
-	padding: 0 20px 0 0;
+	padding: 0;
 }
 #main .widget-area ul ul {
 	border: none;
@@ -1062,7 +1062,17 @@ h3#reply-title {
 	padding: 0;
 }
 #primary {
+/* border: 1px solid black; */
+
 }
+#primary #logo {
+	    background-image:url(images/silo_small.jpg);
+	    display:block;
+	    height:200px;
+	    text-indent:-9999px;
+	    width:137px;
+	}
+
 #secondary {
 }
 
@@ -1266,7 +1276,7 @@ font-size: 1.8em;
   	clear: right;
 	display: block;
 	position: relative;
-	width: 980px;
+	width: 960px;
 	height: 0px;
 	/* line-height: 235px; */
 	margin: 0 auto;
