@@ -8,7 +8,8 @@
  */
 ?>
 
-		<div id="primary" class="widget-area" role="complementary">
+		<div id="primary">
+			<a href="/" title="The Silo by Raphael Rubinstein" id="logo">The Silo by Raphael Rubinstein</a>
 			<ul class="xoxo">
 
 <?php
