@@ -58,14 +58,28 @@ jQuery(document).ready(function($)  {
 		<div class="panel-content">
 
 		
-			<div class="column column-1">
-				<?php if ( is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
-				
+			<div class="column column-1">				
 					<ul class="xoxo">
-						<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
+					
+						<?php 
+						$query = New WP_Query(array('showposts' => 7,
+						'nopaging' => 0,
+						'post_status' => 'publish',
+						'caller_get_posts' => 1,
+						'orderby' => 'modified'
+						));
+						
+						if( $query->have_posts() ) :
+							while ( $query->have_posts() ) : $query->the_post() ?>
+							<li><a href="<?php the_permalink() ?>" title="<?php echo esc_attr(get_the_title() ? get_the_title() : get_the_ID()); ?>"><?php
+								if (get_post_meta($post->ID, "First Name", $single = true) != "") : ?>
+													<?php echo get_post_meta($post->ID, "First Name", $single = true) . ' ' ;?><?php endif; ?>
+								<?php the_title();  	?></a></li>
+					<?php endwhile;
+					endif;
+					wp_reset_query();
+					?>
 					</ul>
-			
-<?php endif; ?>
 			</div>
 
 			<div class="column column-2">
@@ -95,7 +109,7 @@ jQuery(document).ready(function($)  {
 		</div>
 	</div>
 <div id="outer_wrapper">
+
 <div id="wrapper" class="hfeed">
 	
-
 	<div id="main">
