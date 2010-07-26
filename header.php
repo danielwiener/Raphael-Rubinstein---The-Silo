@@ -15,10 +15,20 @@
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
-	 * We filter the output of wp_title() a bit -- see
-	 * twentyten_filter_wp_title() in functions.php.
 	 */
-	wp_title( '|', true, 'right' );
+	global $page, $paged;
+
+	
+
+	// Add the blog name.
+	bloginfo( 'name' );
+	echo ' by Raphael Rubinstein ';
+	wp_title( '|', true, 'left' );
+	
+
+	// Add a page number if necessary:
+	if ( $paged >= 2 || $page >= 2 )
+		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -58,8 +68,9 @@ jQuery(document).ready(function($)  {
 		<div class="panel-content">
 
 		
-			<div class="column column-1">				
-					<ul class="xoxo">
+			<div class="column column-1"><ul class="xoxo">
+				<li id="recent_additions" class="widget-container widget_archive"><h3 class="widget-title">Recent Additions</h3>				
+					
 					
 						<?php 
 						$query = New WP_Query(array('showposts' => 7,
