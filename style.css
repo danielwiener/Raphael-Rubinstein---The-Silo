@@ -1226,7 +1226,7 @@ code {
 	}
 #panel-container a:hover {
 	text-decoration: none;
-	border-bottom: 1px solid #ddd;
+	color: #FF6633; /* DW */
 	}
 #panel li a {
 	border: none;
@@ -1258,10 +1258,11 @@ code {
 	width: 220px;
 	}
 
-#panel .panel-content h3 {
+#panel .panel-content .column h3 {
 color: #fff;
 font-size: 1.8em;
 }
+
 /* Panel Tab */
 #panel-container .tab {
 	border-top: 2px solid #040D12;
@@ -1303,7 +1304,8 @@ font-size: 1.8em;
 	border-top: 1px solid #000;
 	}
 #panel-container .tab a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #FF6633; /* DW */
 	}
 #panel-container .tab a .arrow {
 	font-style: normal;
