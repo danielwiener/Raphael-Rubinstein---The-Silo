@@ -1,5 +1,5 @@
 <?php
-/** shit
+/*
  * The Header for our theme.
  *
  * Displays all of the <head> section and everything up till <div id="main">
@@ -7,6 +7,8 @@
  * @package WordPress
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
+ * @author a very stripped down child theme of Twenty Ten by Daniel Wiener http:danielwiener.com
+ * @attribution drop down panel based on panel on http://themehybrid.com/ by Justin Tadlock. 
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -35,7 +37,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php wp_enqueue_script('jquery'); ?> 
 <?php wp_head(); ?>
-
+<!-- @attribution - drop down panel based on panel on http://themehybrid.com/ by Justin Tadlock. -->
 
 
 <script type="text/javascript">
@@ -70,7 +72,7 @@ jQuery(document).ready(function($)  {
 		
 			<div class="column column-1"><ul class="xoxo">
 				<li id="recent_additions" class="widget-container widget_archive"><h3 class="widget-title">Recent Additions</h3>				
-					
+					<ul>
 					
 						<?php 
 						$query = New WP_Query(array('showposts' => 7,
@@ -90,6 +92,7 @@ jQuery(document).ready(function($)  {
 					endif;
 					wp_reset_query();
 					?>
+					</ul>
 					</ul>
 			</div>
 
