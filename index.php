@@ -55,6 +55,7 @@ get_header(); ?>
 			 get_template_part( 'loop', 'index' );
 			?>
 			<?php endif; ?>
+			<div id="silo_description"><p>The Silo is conceived as a personal, revisionist “dictionary” of contemporary art. Its primary aims are to challenge existing exclusionary accounts of art since 1960 and to offer a fresh look at some canonical artists.</p><p>This is a cumulative project; new entries will appear with as much regularity as circumstances allow.</p></div>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
