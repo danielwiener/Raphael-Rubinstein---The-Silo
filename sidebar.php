@@ -10,6 +10,7 @@
 
 		<div id="primary">
 			<a href="/" title="The Silo by Raphael Rubinstein" id="logo">The Silo by Raphael Rubinstein</a>
+		<!-- <a href="#"><img src="http://thesilo.raphaelrubinstein.com/wp-content/themes/the_silo/images/art21.jpg" /></a> -->
 			<ul class="xoxo">
 
 <?php

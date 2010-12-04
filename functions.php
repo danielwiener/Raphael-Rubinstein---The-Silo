@@ -1,4 +1,16 @@
 <?php
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ *
+ * Used to set the width of images and content. Should be equal to the width the theme
+ * is designed for, generally via the style.css stylesheet.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 675;
+	}
+
+
+
 function remove_dashboard_widgets() {
 	// Globalize the metaboxes array, this holds all the widgets for wp-admin
  	global $wp_meta_boxes;

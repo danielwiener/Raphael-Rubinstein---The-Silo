@@ -657,7 +657,7 @@ padding: 120px 0 0 5px;
 #content img {
 	margin: 0;
 	height: auto;
-	max-width: 640px;
+	max-width: 675px;
 	width: auto;
 }
 #content .attachment img {
@@ -1069,7 +1069,8 @@ h3#reply-title {
 }
 #primary {
 /* border: 1px solid black; */
-
+margin: 0;
+padding: 0;
 }
 #primary #logo {
 	    background-image:url(images/silo_small.jpg);
@@ -1079,6 +1080,16 @@ h3#reply-title {
 	    width:137px;
 	}
 
+#primary ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 100px;
+	}
+#primary ul img{
+	padding: 0;
+	}
+	
 #secondary {
 }
 
