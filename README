@@ -1,0 +1,11 @@
+Theme Name: The Silo
+Theme URI: http://danielwiener.com/
+Description: The Silo, a theme, for Raphael Rubinstein's archive of descriptions of artists from the last 40 years. The Silo is conceived as a personal, revisionist “dictionary” of contemporary art. Its primary aims are to challenge existing exclusionary accounts of art since 1960 and to offer a fresh look at some canonical artists.
+This is a cumulative project; new entries will appear with as much regularity as circumstances allow.
+The front page will be exclusively names and no text
+Author: the Wordpress team and Daniel Wiener
+Author URI: http://danielwiener.com/
+Template: twentyten
+Version: 1
+@author a very stripped down child theme of Twenty Ten by Daniel Wiener http:danielwiener.com 
+@attribution - drop down panel based on panel on http://themehybrid.com/ by Justin Tadlock.

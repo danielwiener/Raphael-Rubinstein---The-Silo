@@ -33,7 +33,11 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
 	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />  
+<!--
+	TODO enqueue scripts and styles in functions.php, remove inline jquery and add to file, get rid of unwanted feeds, or add them, as needed
+	TODO maybe use feedburner, people may like this as a feed
+-->
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php wp_enqueue_script('jquery'); ?> 
 <?php wp_head(); ?>

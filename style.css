@@ -1,17 +1,20 @@
 /*
 Theme Name: The Silo
 Theme URI: http://danielwiener.com/
-Description: The Silo, a theme, for Raphael Rubinstein's archive of descriptions of artists from the last 40 years.
+Description: The Silo, a theme, for Raphael Rubinstein's archive of descriptions of artists from the last 40 years. The Silo is conceived as a personal, revisionist “dictionary” of contemporary art. Its primary aims are to challenge existing exclusionary accounts of art since 1960 and to offer a fresh look at some canonical artists.
+This is a cumulative project; new entries will appear with as much regularity as circumstances allow.
 Author: the Wordpress team and Daniel Wiener
 Author URI: http://danielwiener.com/
 Template: twentyten
-Version: 0.1
+Version: 1
 Tags: black, blue, white, two-columns, fixed-width, custom-header, theme-options, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
 */
 
-/* @import url('../twentyten/style.css'); */
 
 
+/*
+	TODO clean up css, get rid of unneeded css leftover from twentyten
+*/
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
