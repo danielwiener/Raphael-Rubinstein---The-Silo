@@ -33,7 +33,7 @@ function add_google_analytics() {
 echo '<script type="text/javascript">';
 echo "\n";
 echo '  var _gaq = _gaq || [];';
-echo '  _gaq.push(["_setAccount", "GA ID"]);';
+echo '  _gaq.push(["_setAccount", "UA-17774357-1"]);';
 echo '  _gaq.push(["_trackPageview"]);';
 echo "\n";
 echo '  (function() {';
